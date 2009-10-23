@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bschool_app_id: 1
+  round_number: 1
+  deadline: 2009-10-23 15:50:17
+
+two:
+  bschool_app_id: 1
+  round_number: 1
+  deadline: 2009-10-23 15:50:17

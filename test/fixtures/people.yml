@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  full_name: MyString
+  preferred_name: MyString
+  abbreviation: MyString
+  dob: 2009-10-23
+  sex: MyString
+
+two:
+  full_name: MyString
+  preferred_name: MyString
+  abbreviation: MyString
+  dob: 2009-10-23
+  sex: MyString

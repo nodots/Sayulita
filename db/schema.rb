@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091022233808) do
+ActiveRecord::Schema.define(:version => 20091023210723) do
 
   create_table "addresses", :force => true do |t|
     t.integer  "institution_id"
@@ -36,34 +36,64 @@ ActiveRecord::Schema.define(:version => 20091022233808) do
 
   create_table "artifacts", :force => true do |t|
     t.integer  "artifact_bundle_id"
+    t.integer  "sequence"
+    t.string   "subsequence"
     t.text     "prompt"
     t.integer  "max_length"
-    t.string   "type"
+    t.string   "artifact_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "bschool_apps", :force => true do |t|
-    t.integer  "bschool_institution_id"
+    t.integer  "institution_id"
     t.integer  "year"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "institution_people", :force => true do |t|
+    t.integer  "institution_id"
+    t.integer  "person_id"
+    t.string   "institution_person_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+    t.string   "degree"
+    t.date     "start_date"
+    t.date     "end_date"
   end
 
   create_table "institutions", :force => true do |t|
     t.string   "full_name"
     t.string   "short_name"
     t.string   "abbreviation"
-    t.string   "type"
+    t.string   "institution_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "people", :force => true do |t|
+    t.string   "full_name"
+    t.string   "preferred_name"
+    t.string   "abbreviation"
+    t.date     "dob"
+    t.string   "sex"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rounds", :force => true do |t|
+    t.integer  "bschool_app_id"
+    t.integer  "round_number"
+    t.datetime "deadline"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40
-    t.string   "full_name",                 :limit => 100, :default => ""
-    t.string   "short_name",                :limit => 100, :default => ""
-    t.string   "preferred_name",            :limit => 100, :default => ""
+    t.string   "name",                      :limit => 100, :default => ""
     t.string   "email",                     :limit => 100
     t.string   "crypted_password",          :limit => 40
     t.string   "salt",                      :limit => 40
@@ -74,8 +104,9 @@ ActiveRecord::Schema.define(:version => 20091022233808) do
     t.string   "activation_code",           :limit => 40
     t.datetime "activated_at"
     t.string   "state",                                    :default => "passive"
-    t.string   "type"
+    t.string   "user_type"
     t.datetime "deleted_at"
+    t.integer  "person_id"
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true

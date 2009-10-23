@@ -1,0 +1,2 @@
+module InstitutionPeopleHelper
+end

@@ -1,0 +1,20 @@
+<p>
+  <b>Institution:</b>
+  <%=h @institution_person.institution_id %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%=h @institution_person.person_id %>
+</p>
+
+<p>
+  <b>Institution person type:</b>
+  <%=h @institution_person.institution_person_type %>
+</p>
+
+
+<div class="bottom_nav">
+<%= link_to 'Edit', edit_institution_person_path(@institution_person) %> |
+<%= link_to 'Back', institution_people_path %>
+</div>

@@ -1,0 +1,2 @@
+class Alum < InstitutionPerson
+end

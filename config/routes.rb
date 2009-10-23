@@ -1,4 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :institution_people
+
+  map.resources :rounds
+
+  map.resources :bschool_apps
+
+  map.resources :people
+
   map.resources :artifacts
 
   map.resources :artifact_bundles

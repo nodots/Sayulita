@@ -1,0 +1,20 @@
+<p>
+  <b>Bschool app:</b>
+  <%=h @round.bschool_app_id %>
+</p>
+
+<p>
+  <b>Round number:</b>
+  <%=h @round.round_number %>
+</p>
+
+<p>
+  <b>Deadline:</b>
+  <%=h @round.deadline %>
+</p>
+
+
+<div class="bottom_nav">
+<%= link_to 'Edit', edit_round_path(@round) %> |
+<%= link_to 'Back', rounds_path %>
+</div>

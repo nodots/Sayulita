@@ -299,3 +299,462 @@ Rendering template within layouts/institutions
 Rendering institutions/new
 Rendered institutions/_form (3.8ms)
 Completed in 72ms (View: 63, DB: 2) | 200 OK [http://localhost/institutions]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBschool Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `institutions`[0m
+  [4;35;1mEssay Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `artifacts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mClient Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`login` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW COLUMNS FROM `users` LIKE 'full_name'[0m
+  [4;36;1mSQL (71.9ms)[0m   [0;1mALTER TABLE `users` CHANGE `full_name` `name` varchar(100) DEFAULT ''[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091023193426')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `addresses`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `addresses`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `artifact_bundles`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `artifacts`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `artifacts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `artifacts`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `bschool_apps`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `institutions`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `institutions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `institutions`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mClient Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`login` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+  [4;36;1mSQL (78.0ms)[0m   [0;1mALTER TABLE `users` DROP `short_name`[0m
+  [4;35;1mSQL (138.4ms)[0m   [0mALTER TABLE `users` DROP `preferred_name`[0m
+  [4;36;1mSQL (96.8ms)[0m   [0;1mALTER TABLE `users` ADD `person_id` int(11)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091023195758')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `addresses`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `addresses`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `artifact_bundles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `artifacts`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `artifacts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `artifacts`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `bschool_apps`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `institutions`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `institutions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `institutions`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+Migrating to CreatePeople (20091023200414)
+  [4;36;1mSQL (62.6ms)[0m   [0;1mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `full_name` varchar(255), `preferred_name` varchar(255), `abbreviation` varchar(255), `dob` date, `sex` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091023200414')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `addresses`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `addresses`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `artifact_bundles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `artifacts`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `artifacts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `artifacts`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `bschool_apps`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `institutions`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `institutions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `institutions`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-23 15:04:42) [GET]
+
+ActionController::RoutingError (No route matches "/person/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2009-10-23 15:04:57) [GET]
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+Rendering template within layouts/people
+Rendering people/new
+Rendered people/_form (154.9ms)
+Completed in 195ms (View: 189, DB: 2) | 200 OK [http://localhost/people/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2009-10-23 15:05:28) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aRwAwsj9witxiispD1mNZrblQXk4oW/yUMHnF3nQESs=", "person"=>{"abbreviation"=>"fredf", "dob(1i)"=>"2004", "dob(2i)"=>"10", "sex"=>"M", "dob(3i)"=>"23", "preferred_name"=>"Fred Flintstone", "full_name"=>"Fred Flintstone"}}
+  [4;35;1mPerson Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.2ms)[0m   [0mINSERT INTO `people` (`dob`, `updated_at`, `abbreviation`, `sex`, `full_name`, `preferred_name`, `created_at`) VALUES('2004-10-23', '2009-10-23 20:05:28', 'fredf', 'M', 'Fred Flintstone', 'Fred Flintstone', '2009-10-23 20:05:28')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/people/1
+Completed in 21ms (DB: 13) | 302 Found [http://localhost/people]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2009-10-23 15:05:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/show
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/people/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PeopleController#edit (for 127.0.0.1 at 2009-10-23 15:05:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPerson Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+Rendering template within layouts/people
+Rendering people/edit
+Rendered people/_form (7.7ms)
+Completed in 24ms (View: 18, DB: 2) | 200 OK [http://localhost/people/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#new (for 127.0.0.1 at 2009-10-23 15:06:21) [GET]
+  [4;35;1mAddress Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Rendered addresses/_form (6.0ms)
+Completed in 36ms (View: 29, DB: 2) | 200 OK [http://localhost/addresses/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#index (for 127.0.0.1 at 2009-10-23 15:09:23) [GET]
+  [4;36;1mAddress Load (0.3ms)[0m   [0;1mSELECT * FROM `addresses` [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/addresses/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+Migrating to CreatePeople (20091023200414)
+Migrating to RenameBsidInBsapp (20091023201228)
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (21.5ms)[0m   [0mSHOW COLUMNS FROM `bschool_apps` LIKE 'bschool_institution_id'[0m
+  [4;36;1mSQL (74.1ms)[0m   [0;1mALTER TABLE `bschool_apps` CHANGE `bschool_institution_id` `institution_id` int(11) DEFAULT NULL[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091023201228')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `addresses`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `addresses`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `artifact_bundles`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `artifacts`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `artifacts`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `artifacts`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `bschool_apps`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `institutions`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `institutions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `institutions`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (23.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+Migrating to CreatePeople (20091023200414)
+Migrating to RenameBsidInBsapp (20091023201228)
+Migrating to CreateRounds (20091023205017)
+  [4;36;1mSQL (52.3ms)[0m   [0;1mCREATE TABLE `rounds` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `bschool_app_id` int(11), `round_number` int(11), `deadline` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091023205017')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `addresses`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `addresses`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `artifact_bundles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `artifacts`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `artifacts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `artifacts`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `bschool_apps`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `institutions`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `institutions`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `institutions`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `rounds`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `rounds`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `rounds`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+Migrating to CreatePeople (20091023200414)
+Migrating to RenameBsidInBsapp (20091023201228)
+Migrating to CreateRounds (20091023205017)
+Migrating to AddArtifactSequence (20091023205357)
+  [4;36;1mSQL (69.8ms)[0m   [0;1mALTER TABLE `artifacts` ADD `sequence` int(11)[0m
+  [4;35;1mSQL (103.1ms)[0m   [0mALTER TABLE `artifacts` ADD `subsequence` varchar(255)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091023205357')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `addresses`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `addresses`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `artifact_bundles`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `artifacts`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `artifacts`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `artifacts`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `bschool_apps`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `bschool_apps`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `institutions`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `institutions`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `institutions`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `rounds`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `rounds`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `rounds`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+Migrating to CreatePeople (20091023200414)
+Migrating to RenameBsidInBsapp (20091023201228)
+Migrating to CreateRounds (20091023205017)
+Migrating to AddArtifactSequence (20091023205357)
+Migrating to CreateInstitutionPeople (20091023210422)
+  [4;36;1mSQL (159.9ms)[0m   [0;1mCREATE TABLE `institution_people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `institution_id` int(11), `person_id` int(11), `institution_person_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091023210422')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mdescribe `addresses`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `addresses`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `artifact_bundles`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `artifacts`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `artifacts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `artifacts`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `bschool_apps`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `institution_people`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `institution_people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `institution_people`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `institutions`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `institutions`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `institutions`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rounds`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `rounds`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `rounds`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+Migrating to CreatePeople (20091023200414)
+Migrating to RenameBsidInBsapp (20091023201228)
+Migrating to CreateRounds (20091023205017)
+Migrating to AddArtifactSequence (20091023205357)
+Migrating to CreateInstitutionPeople (20091023210422)
+Migrating to AddFieldsToInstitutionPerson (20091023210723)
+  [4;36;1mSQL (45.3ms)[0m   [0;1mALTER TABLE `institution_people` ADD `title` varchar(255)[0m
+  [4;35;1mSQL (99.5ms)[0m   [0mALTER TABLE `institution_people` ADD `degree` varchar(255)[0m
+  [4;36;1mSQL (105.7ms)[0m   [0;1mALTER TABLE `institution_people` ADD `start_date` date[0m
+  [4;35;1mSQL (100.2ms)[0m   [0mALTER TABLE `institution_people` ADD `end_date` date[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091023210723')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `addresses`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `addresses`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `artifact_bundles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `artifacts`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `artifacts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `artifacts`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `bschool_apps`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `bschool_apps`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `institution_people`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `institution_people`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `institution_people`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `institutions`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `institutions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `institutions`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `rounds`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `rounds`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `rounds`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+Migrating to CreatePeople (20091023200414)
+Migrating to RenameBsidInBsapp (20091023201228)
+Migrating to CreateRounds (20091023205017)
+Migrating to AddArtifactSequence (20091023205357)
+Migrating to CreateInstitutionPeople (20091023210422)
+Migrating to AddFieldsToInstitutionPerson (20091023210723)
+Migrating to AddPidToUser (20091023212248)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate column name 'person_id': ALTER TABLE `users` ADD `person_id` int(11)[0m

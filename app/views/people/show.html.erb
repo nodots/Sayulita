@@ -1,0 +1,30 @@
+<p>
+  <b>Full name:</b>
+  <%=h @person.full_name %>
+</p>
+
+<p>
+  <b>Preferred name:</b>
+  <%=h @person.preferred_name %>
+</p>
+
+<p>
+  <b>Abbreviation:</b>
+  <%=h @person.abbreviation %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%=h @person.dob %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%=h @person.sex %>
+</p>
+
+
+<div class="bottom_nav">
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
+</div>
