@@ -1,0 +1,27 @@
+<h1>Listing Institutions</h1>
+
+<table class="listing_table">
+  <tr>
+    <th>Full name</th>
+    <th>Short name</th>
+    <th>Abbreviation</th>
+    <th>Type</th>
+    <th colspan="3">Actions</th>
+  </tr>
+
+<% for institution in @institutions %>
+  <tr>
+    <td><%=h institution.full_name %></td>
+    <td><%=h institution.short_name %></td>
+    <td><%=h institution.abbreviation %></td>
+    <td><%=h institution.type %></td>
+    <td><%= link_to 'Show', institution %></td>
+    <td><%= link_to 'Edit', edit_institution_path(institution) %></td>
+    <td><%= link_to 'Delete', institution, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="bottom_nav">
+<%= link_to 'New institution', new_institution_path %>
+</div>

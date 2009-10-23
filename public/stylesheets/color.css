@@ -1,0 +1,61 @@
+body, p, div, td, li, th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .95em;
+}
+
+
+h1 {
+	font-size: 1.2em;	
+}
+
+h2 {
+	font-size: 1.1em;
+	}
+	
+h3 { 
+	font-size: 1em
+}
+
+div#main {
+	margin: 0px 0 0 100px;
+}
+
+div.degrees {
+}
+
+div.rev_notice {
+	font-size: .5em;
+	text-align: right;
+	width: 100%;
+}
+
+div.top_level_box {
+	border: 1px solid black;
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0px 0px 10px 0px;
+}
+
+div.artifact_box {
+	border: 1px solid black;
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0px 0px 10px 0px;
+}
+
+table.user_artifact {
+	border: 1px solid black;
+	border-collapse: collapse;
+	empty-cells: show;
+}
+
+table.user_artifact td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	vertical-align: top;
+}
+
+.bottom_nav {
+	border: 1px solid black;
+	text-align: right;
+	padding: 10px;
+	width: 660px;
+}

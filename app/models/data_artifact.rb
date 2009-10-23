@@ -1,0 +1,2 @@
+class DataArtifact < Artifact
+end

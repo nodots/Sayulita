@@ -1,0 +1,27 @@
+<h1>Listing Artifacts</h1>
+
+<table class="listing_table">
+  <tr>
+    <th>Artifact bundle</th>
+    <th>Prompt</th>
+    <th>Max length</th>
+    <th>Type</th>
+    <th colspan="3">Actions</th>
+  </tr>
+
+<% for artifact in @artifacts %>
+  <tr>
+    <td><%=h artifact.artifact_bundle_id %></td>
+    <td><%=h artifact.prompt %></td>
+    <td><%=h artifact.max_length %></td>
+    <td><%=h artifact.type %></td>
+    <td><%= link_to 'Show', artifact %></td>
+    <td><%= link_to 'Edit', edit_artifact_path(artifact) %></td>
+    <td><%= link_to 'Delete', artifact, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="bottom_nav">
+<%= link_to 'New artifact', new_artifact_path %>
+</div>

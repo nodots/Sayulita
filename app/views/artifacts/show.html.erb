@@ -1,0 +1,25 @@
+<p>
+  <b>Artifact bundle:</b>
+  <%=h @artifact.artifact_bundle_id %>
+</p>
+
+<p>
+  <b>Prompt:</b>
+  <%=h @artifact.prompt %>
+</p>
+
+<p>
+  <b>Max length:</b>
+  <%=h @artifact.max_length %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @artifact.type %>
+</p>
+
+
+<div class="bottom_nav">
+<%= link_to 'Edit', edit_artifact_path(@artifact) %> |
+<%= link_to 'Back', artifacts_path %>
+</div>

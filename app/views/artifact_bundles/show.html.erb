@@ -1,0 +1,25 @@
+<p>
+  <b>Bschool app:</b>
+  <%=h @artifact_bundle.bschool_app_id %>
+</p>
+
+<p>
+  <b>Required:</b>
+  <%=h @artifact_bundle.required %>
+</p>
+
+<p>
+  <b>Total:</b>
+  <%=h @artifact_bundle.total %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @artifact_bundle.type %>
+</p>
+
+
+<div class="bottom_nav">
+<%= link_to 'Edit', edit_artifact_bundle_path(@artifact_bundle) %> |
+<%= link_to 'Back', artifact_bundles_path %>
+</div>

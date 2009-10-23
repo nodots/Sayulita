@@ -1,0 +1,18 @@
+<h1>New Artifact</h1>
+
+<% form_for(@artifact) do |f| %>
+  <%= f.error_messages %>
+
+<fieldset>
+  <legend>Artifact</legend>
+  <%= render :partial => "form", :locals=>{ :f => f } %>
+</fieldset>
+
+  <fieldset class="button_holder">
+    <%= f.submit "Create" %>
+  </fieldset>
+<% end %>
+
+<div class="bottom_nav">
+<%= link_to 'Back', artifacts_path %>
+</div>

@@ -1,0 +1,23 @@
+<h1>Listing Bschool_apps</h1>
+
+<table class="listing_table">
+  <tr>
+    <th>Bschool institution</th>
+    <th>Year</th>
+    <th colspan="3">Actions</th>
+  </tr>
+
+<% for bschool_app in @bschool_apps %>
+  <tr>
+    <td><%=h bschool_app.bschool_institution_id %></td>
+    <td><%=h bschool_app.year %></td>
+    <td><%= link_to 'Show', bschool_app %></td>
+    <td><%= link_to 'Edit', edit_bschool_app_path(bschool_app) %></td>
+    <td><%= link_to 'Delete', bschool_app, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="bottom_nav">
+<%= link_to 'New bschool_app', new_bschool_app_path %>
+</div>

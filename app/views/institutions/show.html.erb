@@ -1,0 +1,25 @@
+<p>
+  <b>Full name:</b>
+  <%=h @institution.full_name %>
+</p>
+
+<p>
+  <b>Short name:</b>
+  <%=h @institution.short_name %>
+</p>
+
+<p>
+  <b>Abbreviation:</b>
+  <%=h @institution.abbreviation %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @institution.type %>
+</p>
+
+
+<div class="bottom_nav">
+<%= link_to 'Edit', edit_institution_path(@institution) %> |
+<%= link_to 'Back', institutions_path %>
+</div>

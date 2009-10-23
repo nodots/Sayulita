@@ -1,0 +1,27 @@
+<h1>Listing Artifact_bundles</h1>
+
+<table class="listing_table">
+  <tr>
+    <th>Bschool app</th>
+    <th>Required</th>
+    <th>Total</th>
+    <th>Type</th>
+    <th colspan="3">Actions</th>
+  </tr>
+
+<% for artifact_bundle in @artifact_bundles %>
+  <tr>
+    <td><%=h artifact_bundle.bschool_app_id %></td>
+    <td><%=h artifact_bundle.required %></td>
+    <td><%=h artifact_bundle.total %></td>
+    <td><%=h artifact_bundle.type %></td>
+    <td><%= link_to 'Show', artifact_bundle %></td>
+    <td><%= link_to 'Edit', edit_artifact_bundle_path(artifact_bundle) %></td>
+    <td><%= link_to 'Delete', artifact_bundle, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="bottom_nav">
+<%= link_to 'New artifact_bundle', new_artifact_bundle_path %>
+</div>

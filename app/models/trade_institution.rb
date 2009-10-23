@@ -1,0 +1,2 @@
+class TradeInstitution < Institution
+end

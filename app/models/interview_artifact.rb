@@ -1,0 +1,2 @@
+class InterviewArtifact < Artifact
+end

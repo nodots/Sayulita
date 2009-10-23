@@ -1,0 +1,2 @@
+class SupportArtifact < Artifact
+end

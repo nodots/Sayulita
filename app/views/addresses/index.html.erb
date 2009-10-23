@@ -1,0 +1,39 @@
+<h1>Listing Addresses</h1>
+
+<table class="listing_table">
+  <tr>
+    <th>Institution</th>
+    <th>User</th>
+    <th>Address1</th>
+    <th>Address2</th>
+    <th>Address3</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Postal code</th>
+    <th>Country</th>
+    <th>Type</th>
+    <th colspan="3">Actions</th>
+  </tr>
+
+<% for address in @addresses %>
+  <tr>
+    <td><%=h address.institution_id %></td>
+    <td><%=h address.user_id %></td>
+    <td><%=h address.address1 %></td>
+    <td><%=h address.address2 %></td>
+    <td><%=h address.address3 %></td>
+    <td><%=h address.city %></td>
+    <td><%=h address.state %></td>
+    <td><%=h address.postal_code %></td>
+    <td><%=h address.country %></td>
+    <td><%=h address.type %></td>
+    <td><%= link_to 'Show', address %></td>
+    <td><%= link_to 'Edit', edit_address_path(address) %></td>
+    <td><%= link_to 'Delete', address, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="bottom_nav">
+<%= link_to 'New address', new_address_path %>
+</div>

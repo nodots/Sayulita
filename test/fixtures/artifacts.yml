@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  artifact_bundle_id: 1
+  prompt: MyText
+  max_length: 1
+  type: MyString
+
+two:
+  artifact_bundle_id: 1
+  prompt: MyText
+  max_length: 1
+  type: MyString

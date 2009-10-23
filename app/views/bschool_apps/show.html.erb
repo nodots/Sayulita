@@ -1,0 +1,15 @@
+<p>
+  <b>Bschool institution:</b>
+  <%=h @bschool_app.bschool_institution_id %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%=h @bschool_app.year %>
+</p>
+
+
+<div class="bottom_nav">
+<%= link_to 'Edit', edit_bschool_app_path(@bschool_app) %> |
+<%= link_to 'Back', bschool_apps_path %>
+</div>

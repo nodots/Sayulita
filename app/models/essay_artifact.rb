@@ -1,0 +1,2 @@
+class EssayArtifact < Artifact
+end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bschool_app_id: 1
+  required: 1
+  total: 1
+  type: MyString
+
+two:
+  bschool_app_id: 1
+  required: 1
+  total: 1
+  type: MyString
