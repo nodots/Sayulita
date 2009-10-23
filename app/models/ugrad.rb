@@ -1,0 +1,2 @@
+class Ugrad < Institution
+end

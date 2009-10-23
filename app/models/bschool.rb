@@ -1,0 +1,2 @@
+class Bschool < Institution
+end

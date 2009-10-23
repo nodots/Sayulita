@@ -4,7 +4,7 @@ class CreateArtifacts < ActiveRecord::Migration
       t.integer :artifact_bundle_id
       t.text :prompt
       t.integer :max_length
-      t.string :type
+      t.string :artifact_type
 
       t.timestamps
     end

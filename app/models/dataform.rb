@@ -1,0 +1,2 @@
+class Dataform < Artifact
+end

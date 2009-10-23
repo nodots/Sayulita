@@ -1,2 +1,0 @@
-class BschoolInstitution < Institution
-end

@@ -1,2 +1,0 @@
-class EssayArtifact < Artifact
-end

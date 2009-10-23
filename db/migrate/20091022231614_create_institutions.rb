@@ -4,7 +4,7 @@ class CreateInstitutions < ActiveRecord::Migration
       t.string :full_name
       t.string :short_name
       t.string :abbreviation
-      t.string :type
+      t.string :institution_type
 
       t.timestamps
     end

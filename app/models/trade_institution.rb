@@ -1,2 +1,0 @@
-class TradeInstitution < Institution
-end
