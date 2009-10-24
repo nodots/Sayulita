@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :user_addresses
+
+  map.resources :institution_addresses
+
   map.resources :institution_people
 
   map.resources :rounds
