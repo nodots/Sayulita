@@ -9,9 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091024211252) do
+ActiveRecord::Schema.define(:version => 20091025001657) do
 
   create_table "addresses", :force => true do |t|
+    t.integer  "institution_id"
+    t.integer  "user_id"
     t.string   "address1"
     t.string   "address2"
     t.string   "address3"
@@ -34,13 +36,13 @@ ActiveRecord::Schema.define(:version => 20091024211252) do
 
   create_table "artifacts", :force => true do |t|
     t.integer  "artifact_bundle_id"
+    t.integer  "sequence"
+    t.string   "subsequence"
     t.text     "prompt"
     t.integer  "max_length"
     t.string   "artifact_type"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "sequence"
-    t.string   "subsequence"
   end
 
   create_table "bschool_apps", :force => true do |t|
@@ -50,23 +52,16 @@ ActiveRecord::Schema.define(:version => 20091024211252) do
     t.datetime "updated_at"
   end
 
-  create_table "institution_addresses", :force => true do |t|
-    t.integer  "institution_id"
-    t.integer  "address_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "institution_people", :force => true do |t|
     t.integer  "institution_id"
     t.integer  "person_id"
     t.string   "institution_person_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.string   "title"
     t.string   "degree"
     t.date     "start_date"
     t.date     "end_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "institutions", :force => true do |t|
@@ -86,19 +81,13 @@ ActiveRecord::Schema.define(:version => 20091024211252) do
     t.string   "sex"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "rounds", :force => true do |t|
     t.integer  "bschool_app_id"
     t.integer  "round_number"
     t.datetime "deadline"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "user_addresses", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "address_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

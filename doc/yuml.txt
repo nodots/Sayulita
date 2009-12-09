@@ -12,6 +12,7 @@
 [InstitutionPerson]^[Student]
 [InstitutionPerson]^[Alum]
 [InstitutionPerson]^[Employee]
+[InstitutionPerson]^[Applicant]
 [Artifact]+1->*[Version]
 [Bschool]+1->*[Application]
 [Version]has-.->[User]

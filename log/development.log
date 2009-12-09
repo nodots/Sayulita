@@ -962,3 +962,185 @@ Migrating to CreateUserAddresses (20091024211252)
   [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
   [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `users`[0m
   [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (31.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (12.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (78.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+Migrating to CreatePeople (20091023200414)
+Migrating to RenameBsidInBsapp (20091023201228)
+Migrating to CreateRounds (20091023205017)
+Migrating to AddArtifactSequence (20091023205357)
+Migrating to CreateInstitutionPeople (20091023210422)
+Migrating to AddFieldsToInstitutionPerson (20091023210723)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `addresses`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `addresses`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mdescribe `artifact_bundles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `artifacts`[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mdescribe `artifacts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `artifacts`[0m
+  [4;36;1mSQL (11.4ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `bschool_apps`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `bschool_apps`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `institution_people`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `institution_people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `institution_people`[0m
+  [4;36;1mSQL (12.9ms)[0m   [0;1mSHOW FIELDS FROM `institutions`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `institutions`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `institutions`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mSHOW FIELDS FROM `rounds`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `rounds`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `rounds`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mClient Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mClient Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBschool Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `institutions`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBschool Create (0.4ms)[0m   [0;1mINSERT INTO `institutions` (`institution_type`, `updated_at`, `abbreviation`, `short_name`, `full_name`, `created_at`) VALUES('Bschool', '2009-10-25 00:07:38', 'HBS', 'Harvard', 'Harvard Business School', '2009-10-25 00:07:38')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBschool Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `institutions`[0m
+  [4;35;1mBschool Load (0.5ms)[0m   [0mSELECT * FROM `institutions` WHERE (`institutions`.`id` = 1) AND ( (`institutions`.`institution_type` = 'Bschool' ) ) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mBschoolApp Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;36;1mBschoolApp Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'bschool_apps.bschool_id' in 'where clause': SELECT * FROM `bschool_apps` WHERE (`bschool_apps`.bschool_id = 1) [0m
+  [4;35;1mBschoolApp Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'bschool_apps.bschool_id' in 'where clause': SELECT * FROM `bschool_apps` WHERE (`bschool_apps`.bschool_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBschool Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `institutions`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBschool Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `institutions`[0m
+  [4;35;1mBschool Load (0.3ms)[0m   [0mSELECT * FROM `institutions` WHERE (`institutions`.`id` = 1) AND ( (`institutions`.`institution_type` = 'Bschool' ) ) [0m
+  [4;36;1mBschoolApp Load (0.3ms)[0m   [0;1mSELECT * FROM `bschool_apps` WHERE (`bschool_apps`.institution_id = 1) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mBschoolApp Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBschoolApp Create (0.2ms)[0m   [0;1mINSERT INTO `bschool_apps` (`updated_at`, `institution_id`, `year`, `created_at`) VALUES('2009-10-25 00:12:10', 1, 2009, '2009-10-25 00:12:10')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'kenr@nodots.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'kenr@nodots.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`name`, `salt`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `remember_token`, `user_type`, `login`, `person_id`, `email`, `created_at`, `state`) VALUES('Ken Riley', '86cbd4d13b70008808a8e96b2ef8a62161fb2f50', '2009-10-25 00:15:35', NULL, '5ba964666624796af35493f1fcdd3f84fa5e54ef', NULL, NULL, NULL, NULL, NULL, 'kenr@nodots.com', NULL, 'kenr@nodots.com', '2009-10-25 00:15:35', 'passive')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'people.user_id' in 'where clause': SELECT * FROM `people` WHERE (`people`.user_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091022225523)
+Migrating to CreateInstitutions (20091022231614)
+Migrating to CreateAddresses (20091022232653)
+Migrating to CreateBschoolApps (20091022233418)
+Migrating to CreateArtifactBundles (20091022233552)
+Migrating to CreateArtifacts (20091022233808)
+Migrating to RenameFullName (20091023193426)
+Migrating to RefactorUserPerson (20091023195758)
+Migrating to CreatePeople (20091023200414)
+Migrating to RenameBsidInBsapp (20091023201228)
+Migrating to CreateRounds (20091023205017)
+Migrating to AddArtifactSequence (20091023205357)
+Migrating to CreateInstitutionPeople (20091023210422)
+Migrating to AddFieldsToInstitutionPerson (20091023210723)
+Migrating to AddUidToPerson (20091025001657)
+  [4;36;1mSQL (63.0ms)[0m   [0;1mALTER TABLE `people` ADD `user_id` int(11)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091025001657')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (68.1ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `addresses`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `addresses`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `artifact_bundles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `artifact_bundles`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `artifacts`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `artifacts`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `artifacts`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `bschool_apps`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `bschool_apps`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `institution_people`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `institution_people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `institution_people`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `institutions`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `institutions`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `institutions`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `rounds`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `rounds`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `rounds`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.user_id = 1) LIMIT 1[0m
+  [4;35;1mApplicant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `institution_people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mApplicant Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `institution_people`[0m
+  [4;35;1mPerson Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `updated_at`, `abbreviation`, `sex`, `user_id`, `full_name`, `preferred_name`, `created_at`) VALUES(1960, '2009-10-25 00:23:35', 'kenr', NULL, 1, 'Kenneth Alan Riley', 'Ken Riley', '2009-10-25 00:23:35')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.user_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Update (0.3ms)[0m   [0mUPDATE `people` SET `sex` = 'M', `updated_at` = '2009-10-25 00:24:15' WHERE `id` = 2[0m
+  [4;36;1mSQL (256.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY 'kenr@nodots.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'kenr@nodots.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `user_type` = 'Client', `updated_at` = '2009-10-25 00:24:30' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mClient Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE ( (`users`.`user_type` = 'Client' ) ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mApplicant Create (0.2ms)[0m   [0mINSERT INTO `institution_people` (`institution_person_type`, `start_date`, `end_date`, `degree`, `updated_at`, `title`, `institution_id`, `person_id`, `created_at`) VALUES('Applicant', NULL, NULL, NULL, '2009-10-25 00:25:42', NULL, 1, 1, '2009-10-25 00:25:42')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mInstitution Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `institutions`[0m
+  [4;36;1mInstitution Load (0.2ms)[0m   [0;1mSELECT * FROM `institutions` WHERE (`institutions`.`id` = 1) [0m
+  [4;35;1mBschool Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `institutions`[0m
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mStudent Columns (13.6ms)[0m   [0;1mSHOW FIELDS FROM `institution_people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mClient Columns (22.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m

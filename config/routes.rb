@@ -13,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :artifacts
 
-  map.resources :artifact_bundles
+  map.resources :bundles
 
   map.resources :bschool_apps
 
